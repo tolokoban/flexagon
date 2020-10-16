@@ -1,0 +1,16 @@
+div.page-Intro div.flexagons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 640px;
+}
+
+div.page-Intro div.flexagons>* {
+    margin: 0
+}
+
+@media (max-width: 640px) {
+    div.page-Intro div.flexagons {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 99vw;
+    }    
+}
