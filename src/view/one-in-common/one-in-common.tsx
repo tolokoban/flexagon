@@ -34,15 +34,23 @@ export default class OneInCommon extends React.Component<IOneInCommonProps, IOne
             'view-OneInCommon',
             ...Tfw.Converter.StringArray(this.props.className, [])
         ]
-        const size = "96px"
+        const size = "5rem"
 
         return (<div className={classes.join(' ')}>
             <div className="grid">
                 <div>&nbsp;</div>
-                <Flexagon values={this.flex2} color="#dfc" size={size} rotate={2}/>
-                <Flexagon values={this.flex4} color="#dfc" size={size} rotate={2}/>
-                <Flexagon values={this.flex14} color="#dfc" size={size} rotate={-2}/>
-                <Flexagon values={this.flex16} color="#dfc" size={size} rotate={-2}/>
+                <Flexagon values={this.flex2} 
+                    color={["#dfc", "#dfc", "#dfc", "#dfc", "#dfc", "#fdc"]}
+                    size={size} rotate={2}/>
+                <Flexagon values={this.flex4} 
+                    color={["#dfc", "#fdc", "#dfc", "#dfc", "#dfc", "#dfc"]}
+                    size={size} rotate={2}/>
+                <Flexagon values={this.flex14} 
+                    color={["#dfc", "#dfc", "#dfc", "#dfc", "#dfc", "#fdc"]}
+                    size={size} rotate={-2}/>
+                <Flexagon values={this.flex16} 
+                    color={["#dfc", "#dfc", "#dfc", "#fdc", "#dfc", "#dfc"]}
+                    size={size} rotate={-2}/>
 
                 <Flexagon values={this.flex0} color="#fdc" size={size} />
                 <div>13</div><div>11</div><div>7</div><div>11</div>

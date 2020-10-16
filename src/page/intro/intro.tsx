@@ -34,13 +34,14 @@ export default class Intro extends React.Component<IIntroProps, IIntroState> {
             <div className="flexagons">
                 {
                     Flexagons.createTri().map(
-                        values => <Flexagon values={values} size="112px" />
+                        values => <Flexagon values={values} size="4rem" />
                     )
                 }
             </div>
             <p>
-                Since there are 18 triangles and we only need 6 of them to display an hexagon,
-                we can maybe draw 3 images that will be revealed by flipping the strip.
+                Since there are 18 triangles and we only need 6 of them
+                to display an hexagon, we wonder if we could draw 3 distinct
+                images that will be revealed by flipping the strip.
             </p>
             <p>
                 Unfortunatly, this won't work because it is impossible to choose
@@ -51,13 +52,31 @@ export default class Intro extends React.Component<IIntroProps, IIntroState> {
                 triangle. It turns out that each configuration is compatible with
                 5 and only 5 other configurations.
             </p>
-            <TriCompatibility size="95%" />
+            <TriCompatibility size="100vmin" />
             <p>
                 Lines represent compatibility. If the line is not dashed,
                 the configurations are both sides of the same hexagon.
             </p>
             <hr />
-            <OneInCommon/>
+            <OneInCommon />
+            <hr />
+            <p>We have two winners:</p>
+            <div>
+                <Flexagon values={[0, 7, 6, 13, 12, 11]} color="#fdc" size="8rem" />
+                <Flexagon
+                    values={[16, 5, 4, 11, 10, 9]}
+                    color={["#dfc", "#dfc", "#dfc", "#fdc", "#dfc", "#dfc"]}
+                    size="8rem" />
+                <Flexagon values={[8, 15, 14, 3, 2, 1]} color="#cdf" size="8rem" />
+            </div>
+            <div>
+                <Flexagon values={[0, 7, 6, 13, 12, 11]} color="#fdc" size="8rem" />
+                <Flexagon
+                    values={[2, 9, 8, 15, 14, 13]}
+                    color={["#dfc", "#dfc", "#dfc", "#dfc", "#dfc", "#fdc"]}
+                    size="8rem" />
+                <Flexagon values={[10, 17, 15, 5, 4, 3]} color="#cdf" size="8rem" />
+            </div>
         </div>)
     }
 }

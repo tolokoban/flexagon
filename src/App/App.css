@@ -6,5 +6,5 @@
 }
 
 .App > div {
-    max-width: 800px;
+    max-width: var(--page-width);
 }
