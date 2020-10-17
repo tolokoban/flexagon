@@ -38,7 +38,7 @@ export default class Intro extends React.Component<IIntroProps, IIntroState> {
             <div className="flexagons">
                 {
                     Flexagons.createTri().map(
-                        values => <Flexagon values={values} size="4rem" />
+                        values => <Flexagon values={values} size="4em" />
                     )
                 }
             </div>
@@ -68,20 +68,20 @@ export default class Intro extends React.Component<IIntroProps, IIntroState> {
             <hr />
             <p>We have two winners:</p>
             <div>
-                <Flexagon values={[0, 7, 6, 13, 12, 11]} color="#fdc" size="8rem" />
+                <Flexagon values={[0, 7, 6, 13, 12, 11]} color="#fdc" size="8em" />
                 <Flexagon
                     values={[16, 5, 4, 11, 10, 9]}
                     color={["#dfc", "#dfc", "#dfc", "#fdc", "#dfc", "#dfc"]}
-                    size="8rem" />
-                <Flexagon values={[8, 15, 14, 3, 2, 1]} color="#cdf" size="8rem" />
+                    size="8em" />
+                <Flexagon values={[8, 15, 14, 3, 2, 1]} color="#cdf" size="8em" />
             </div>
             <div>
-                <Flexagon values={[0, 7, 6, 13, 12, 11]} color="#fdc" size="8rem" />
+                <Flexagon values={[0, 7, 6, 13, 12, 11]} color="#fdc" size="8em" />
                 <Flexagon
                     values={[2, 9, 8, 15, 14, 13]}
                     color={["#dfc", "#dfc", "#dfc", "#dfc", "#dfc", "#fdc"]}
-                    size="8rem" />
-                <Flexagon values={[10, 17, 15, 5, 4, 3]} color="#cdf" size="8rem" />
+                    size="8em" />
+                <Flexagon values={[10, 17, 15, 5, 4, 3]} color="#cdf" size="8em" />
             </div>
         </div>)
     }

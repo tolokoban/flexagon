@@ -34,7 +34,7 @@ export default class OneInCommon extends React.Component<IOneInCommonProps, IOne
             'view-OneInCommon',
             ...Tfw.Converter.StringArray(this.props.className, [])
         ]
-        const size = "5rem"
+        const size = "5em"
 
         return (<div className={classes.join(' ')}>
             <div className="grid">

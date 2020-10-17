@@ -12,9 +12,9 @@
         "@types/react-dom": "^16.9.8",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
-        "react-scripts": "3.4.1",
-        "typescript": "^3.7.5",
-        "tfw": "^0"
+        "react-scripts": "^3.4.3",
+        "tfw": "^0",
+        "typescript": "^3.7.5"
     },
     "scripts": {
         "start": "PORT=3000 react-scripts start",
@@ -41,6 +41,6 @@
     },
     "devDependencies": {
         "@types/jest": "^25.2.3",
-        "gh-pages": "^2.2.0"
+        "gh-pages": "^3.1.0"
     }
 }

@@ -8,6 +8,6 @@ div.view-OneInCommon>div.grid>div {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     max-width: 3em;
 }
