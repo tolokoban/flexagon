@@ -26,10 +26,14 @@ export default class Intro extends React.Component<IIntroProps, IIntroState> {
         const flex0 = flexagons[0]
 
         return (<div className={classes.join(' ')}>
-            <h1>Flexagons</h1>
+            <h1>Tri-Hexa-Flexagons with construction defect</h1>
             <p>
-                <b>Tri-Flexagons</b> are <a href="https://en.wikipedia.org/wiki/M%C3%B6bius_strip" target="wiki">Möbius strips</a> made of 18 triangles numbered from 0 to 17.
-                Here are all the possible configurations:
+                <b><a href="https://en.wikipedia.org/wiki/Flexagon#Trihexaflexagon" target="wiki">Tri-Hexa-Flexagons</a></b> are&nbsp;
+                <a href="https://en.wikipedia.org/wiki/M%C3%B6bius_strip" target="wiki">Möbius strips</a> made of 18 triangles.
+                They have 3 distinct faces.
+            </p>
+            <p>
+                But if you don't construct them right, you end up with this:
             </p>
             <div className="flexagons">
                 {
@@ -39,13 +43,11 @@ export default class Intro extends React.Component<IIntroProps, IIntroState> {
                 }
             </div>
             <p>
-                Since there are 18 triangles and we only need 6 of them
-                to display an hexagon, we wonder if we could draw 3 distinct
-                images that will be revealed by flipping the strip.
-            </p>
-            <p>
-                Unfortunatly, this won't work because it is impossible to choose
-                three configurations that share no triangle.
+                A <em>good</em> flexagon will be axial-symetrical with a&nbsp;
+                <code>2-2-2</code> pattern.
+                Whereas a <em>wrong</em> flexagon has a <code>1-2-3</code> pattern.
+                The result is that it is now impossible to choose three configurations
+                that share no triangle.
             </p>
             <p>
                 Let's call <b>compatible</b> two configurations with no common
@@ -58,6 +60,10 @@ export default class Intro extends React.Component<IIntroProps, IIntroState> {
                 the configurations are both sides of the same hexagon.
             </p>
             <hr />
+            <p>
+                It seems that the best we can do is to find configuration
+                with the smallest possible number of common triangles.
+            </p>
             <OneInCommon />
             <hr />
             <p>We have two winners:</p>
