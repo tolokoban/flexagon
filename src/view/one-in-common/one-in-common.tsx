@@ -1,3 +1,4 @@
+// tslint:disable: no-magic-numbers
 import React from "react"
 import Tfw from 'tfw'
 import Flexagons from '../../flexagons'
@@ -5,14 +6,11 @@ import Flexagon from '../flexagon'
 
 import "./one-in-common.css"
 
-const Button = Tfw.View.Button
-
 interface IOneInCommonProps {
     className?: string | string[]
 }
-interface IOneInCommonState { }
 
-export default class OneInCommon extends React.Component<IOneInCommonProps, IOneInCommonState> {
+export default class OneInCommon extends React.Component<IOneInCommonProps> {
     private readonly flexagons = Flexagons.createTri()
     private readonly flex0 = this.flexagons[0]
     private readonly flex3 = this.flexagons[3]
@@ -34,7 +32,7 @@ export default class OneInCommon extends React.Component<IOneInCommonProps, IOne
             'view-OneInCommon',
             ...Tfw.Converter.StringArray(this.props.className, [])
         ]
-        const size = "5em"
+        const size = "4em"
 
         return (<div className={classes.join(' ')}>
             <div className="grid">
@@ -65,7 +63,7 @@ export default class OneInCommon extends React.Component<IOneInCommonProps, IOne
                 <div>{Flexagons.intersect(this.flex8, this.flex2).join(", ")}</div>
                 <div>{Flexagons.intersect(this.flex8, this.flex4).join(", ")}</div>
                 <div>{Flexagons.intersect(this.flex8, this.flex14).join(", ")}</div>
-                <div>👍</div>
+                <div><span role="img" aria-label="ok">👍</span></div>
 
                 <Flexagon values={this.flex9} color="#cdf" size={size} />
                 <div>{Flexagons.intersect(this.flex9, this.flex2).join(", ")}</div>
@@ -74,7 +72,7 @@ export default class OneInCommon extends React.Component<IOneInCommonProps, IOne
                 <div>{Flexagons.intersect(this.flex9, this.flex16).join(", ")}</div>
 
                 <Flexagon values={this.flex10} color="#cdf" size={size} />
-                <div>👍</div>
+                <div><span role="img" aria-label="ok">👍</span></div>
                 <div>{Flexagons.intersect(this.flex10, this.flex4).join(", ")}</div>
                 <div>{Flexagons.intersect(this.flex10, this.flex14).join(", ")}</div>
                 <div>{Flexagons.intersect(this.flex10, this.flex16).join(", ")}</div>

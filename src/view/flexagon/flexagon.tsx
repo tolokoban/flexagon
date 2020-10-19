@@ -1,10 +1,8 @@
+// tslint:disable: no-magic-numbers
 import Tfw from 'tfw'
 import React from "react"
 
-import "./flexagon.css"
-
 const castStringArray = Tfw.Converter.StringArray
-const castString = Tfw.Converter.String
 const castFloat = Tfw.Converter.Double
 const castUnit = Tfw.Converter.Unit
 
@@ -15,16 +13,9 @@ interface IFlexagonProps {
     rotate?: number
     values: [number, number, number, number, number, number]
 }
-interface IFlexagonState { }
 
-export default class Flexagon extends React.Component<IFlexagonProps, IFlexagonState> {
-    state = {}
-
+export default class Flexagon extends React.Component<IFlexagonProps> {
     render() {
-        const classes = [
-            'view-Flexagon',
-            castString(this.props.className, "")
-        ]
         const size = castUnit(this.props.size, "64px")
         const colors = castStringArray(this.props.color, ["#ffd"])
         const [A, B, C, D, E, F] = this.props.values
@@ -41,7 +32,7 @@ export default class Flexagon extends React.Component<IFlexagonProps, IFlexagonS
             stroke-linejoin="round"
             style={{
                 fontWeight: "bolder",
-                fontFamily: "sans-serif"
+                fontFamily: "inherit"
             }}
         >
             <g transform={`rotate(${castFloat(this.props.rotate, 0) * 60})`}>

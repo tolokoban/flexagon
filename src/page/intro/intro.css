@@ -1,8 +1,9 @@
-div.page-Intro div.flexagons {
-    display: grid;
+section.page-Intro > div>.flexagons {
+    display: inline grid;
+    display: inline-grid;
     grid-template-columns: repeat(6, 1fr);
 }
 
-div.page-Intro div.flexagons>* {
+section.page-Intro > div>.flexagons>* {
     margin: 0
 }
