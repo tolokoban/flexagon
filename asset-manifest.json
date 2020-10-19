@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.2587627b.chunk.css",
-    "main.js": "./static/js/main.39923af6.chunk.js",
-    "main.js.map": "./static/js/main.39923af6.chunk.js.map",
+    "main.css": "./static/css/main.90a89c23.chunk.css",
+    "main.js": "./static/js/main.9db2b2e4.chunk.js",
+    "main.js.map": "./static/js/main.9db2b2e4.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.c02562bb.js",
     "runtime-main.js.map": "./static/js/runtime-main.c02562bb.js.map",
-    "static/js/2.ce052b8d.chunk.js": "./static/js/2.ce052b8d.chunk.js",
-    "static/js/2.ce052b8d.chunk.js.map": "./static/js/2.ce052b8d.chunk.js.map",
+    "static/css/2.276061ed.chunk.css": "./static/css/2.276061ed.chunk.css",
+    "static/js/2.bc4a847b.chunk.js": "./static/js/2.bc4a847b.chunk.js",
+    "static/js/2.bc4a847b.chunk.js.map": "./static/js/2.bc4a847b.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.689da59733ed8db02ade4b5d5e74d672.js": "./precache-manifest.689da59733ed8db02ade4b5d5e74d672.js",
+    "precache-manifest.4995d5b26dd1361b7d783335b354ec73.js": "./precache-manifest.4995d5b26dd1361b7d783335b354ec73.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.2587627b.chunk.css.map": "./static/css/main.2587627b.chunk.css.map",
-    "static/js/2.ce052b8d.chunk.js.LICENSE.txt": "./static/js/2.ce052b8d.chunk.js.LICENSE.txt",
+    "static/css/2.276061ed.chunk.css.map": "./static/css/2.276061ed.chunk.css.map",
+    "static/css/main.90a89c23.chunk.css.map": "./static/css/main.90a89c23.chunk.css.map",
+    "static/js/2.bc4a847b.chunk.js.LICENSE.txt": "./static/js/2.bc4a847b.chunk.js.LICENSE.txt",
     "static/media/indie-flower.css": "./static/media/0.c32e58e7.ttf",
     "static/media/noto.css": "./static/media/3.1a1d2b4f.ttf",
     "static/media/roboto.css": "./static/media/9.195fe20b.ttf",
+    "static/media/App.css": "./static/media/background.49871d5e.webp",
     "static/media/fredericka.css": "./static/media/fredericka-400.744dce4b.woff2",
     "static/media/input-image.yaml": "./static/media/input-image.ed7190ea.yaml",
     "static/media/josefin.css": "./static/media/josefin.7270440b.woff2",
@@ -25,8 +28,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c02562bb.js",
-    "static/js/2.ce052b8d.chunk.js",
-    "static/css/main.2587627b.chunk.css",
-    "static/js/main.39923af6.chunk.js"
+    "static/css/2.276061ed.chunk.css",
+    "static/js/2.bc4a847b.chunk.js",
+    "static/css/main.90a89c23.chunk.css",
+    "static/js/main.9db2b2e4.chunk.js"
   ]
 }
